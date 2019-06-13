@@ -27,6 +27,9 @@ class HalfViewController: UIViewController {
     @IBOutlet weak var distanceLabel: GlitchLabel!
     @IBOutlet weak var directionLabel: GlitchLabel!
     
+    @IBOutlet weak var navigationButton: UIButton!
+    @IBOutlet weak var favoriteButton: UIButton!
+    
     deinit {
         print("deinit")
     }
@@ -41,7 +44,30 @@ class HalfViewController: UIViewController {
             HUD.flash(.label("无法获取用户ID"), delay: 2)
             return
         }
-        vm = HistoryModel.init(id: id)
+        vm = HistoryModel(id: id)
+        
+        view.backgroundColor = UIColor.flatOrangeDark.withAlphaComponent(0.5)
+        
+        setupButton()
+    }
+    
+    func setupButton() {
+        let imageA = UIImage(named: "navigation_icon")?.filled(withColor: UIColor.black)
+        let imageB = UIImage(named: "favorite_icon")?.filled(withColor: UIColor.black)
+        
+        navigationButton.setImage(imageA, for: .normal)
+        favoriteButton.setImage(imageB, for: .normal)
+        
+        [navigationButton, favoriteButton].forEach { (btn) in
+            let color = UIColor.cyan
+            btn?.layer.cornerRadius = 10
+            btn?.layer.shadowColor = color.cgColor
+            btn?.layer.borderWidth = 0
+            btn?.layer.borderColor = color.cgColor
+            btn?.layer.shadowOpacity = 0.8
+            btn?.layer.shadowOffset = CGSize(width: 2, height: 2)
+        }
+
     }
     
     func setupSearch() {

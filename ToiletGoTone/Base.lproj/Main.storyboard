@@ -112,6 +112,8 @@
                         <outlet property="buildingLabel" destination="wAt-Cc-Iey" id="xiE-SU-RCx"/>
                         <outlet property="directionLabel" destination="Gkn-LU-e3k" id="eBg-nS-hxW"/>
                         <outlet property="distanceLabel" destination="Pwy-ne-nlt" id="yBz-FK-4Jn"/>
+                        <outlet property="favoriteButton" destination="7zf-sQ-JXY" id="KAs-go-d4g"/>
+                        <outlet property="navigationButton" destination="14Z-pX-igp" id="bYa-RI-Wel"/>
                         <outlet property="streetInfoLabel" destination="bFa-Qj-1EA" id="fKk-m1-kH4"/>
                     </connections>
                 </viewController>

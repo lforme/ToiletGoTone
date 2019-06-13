@@ -12,6 +12,7 @@
 		9C7B64D722B22F73007832D0 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D622B22F73007832D0 /* HistoryModel.swift */; };
 		9C7B64D922B23339007832D0 /* PKHud+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D822B23339007832D0 /* PKHud+Rx.swift */; };
 		9C7B64DB22B2334D007832D0 /* ActionError+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */; };
+		9C7B64DD22B25E53007832D0 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64DC22B25E53007832D0 /* UIImage+Ex.swift */; };
 		9CA869C822B14CCB005A6764 /* HalfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA869C722B14CCB005A6764 /* HalfViewController.swift */; };
 		9CB7606A22B0AEB6004EE816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7606922B0AEB6004EE816 /* AppDelegate.swift */; };
 		9CB7606C22B0AEB6004EE816 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7606B22B0AEB6004EE816 /* RootViewController.swift */; };
@@ -41,6 +42,7 @@
 		9C7B64D622B22F73007832D0 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		9C7B64D822B23339007832D0 /* PKHud+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PKHud+Rx.swift"; sourceTree = "<group>"; };
 		9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionError+Ex.swift"; sourceTree = "<group>"; };
+		9C7B64DC22B25E53007832D0 /* UIImage+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
 		9CA869C722B14CCB005A6764 /* HalfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfViewController.swift; sourceTree = "<group>"; };
 		9CB7606622B0AEB6004EE816 /* ToiletGoTone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToiletGoTone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB7606922B0AEB6004EE816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		9CB7608B22B0DD62004EE816 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9C7B64DC22B25E53007832D0 /* UIImage+Ex.swift */,
 				9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */,
 				9C7B64D822B23339007832D0 /* PKHud+Rx.swift */,
 				9CB7608F22B0DE5D004EE816 /* HasDisposeBag.swift */,
@@ -371,6 +374,7 @@
 				9CB7609D22B10EFE004EE816 /* ToiletBubbleView.swift in Sources */,
 				9CB7608822B0D9DB004EE816 /* ObjectAssociation.swift in Sources */,
 				9CB7608422B0D9C4004EE816 /* BaseNavigationController.swift in Sources */,
+				9C7B64DD22B25E53007832D0 /* UIImage+Ex.swift in Sources */,
 				9CB7608622B0D9D0004EE816 /* UIViewController+Navigation.swift in Sources */,
 				9CA869C822B14CCB005A6764 /* HalfViewController.swift in Sources */,
 				9CB7608D22B0DDE7004EE816 /* APPDelegate+Ex.swift in Sources */,
