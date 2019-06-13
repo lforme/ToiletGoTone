@@ -47,6 +47,8 @@ class HistoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AppDelegate.changeStatusBarStyle(.default)
+        
         title = "收藏的厕所"
         guard let id = AVUser.current()?.objectId else {
             HUD.flash(.label("无法获取用户ID"), delay: 2)

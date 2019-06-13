@@ -68,13 +68,16 @@ class HalfViewController: UIViewController {
     }
     
     @IBAction func favoriteTap(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
         vm.buildingName = streetInfoLabel.text
         vm.street = buildingLabel.text
         vm.evaluate = "这个厕所真的很好用哦"
         
         vm.saveToServer().subscribe(onNext: { (s) in
             if s {
-                HUD.flash(.label("搜藏成功"), delay: 2)
+                HUD.flash(.label("收藏成功"), delay: 2)
             }
         }, onError: { (error) in
             HUD.flash(.label(error.localizedDescription), delay: 2)
