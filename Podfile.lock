@@ -1,0 +1,137 @@
+PODS:
+  - Action (4.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - AMap3DMap-NO-IDFA (6.9.0):
+    - AMapFoundation-NO-IDFA (~> 1.5)
+  - AMapFoundation-NO-IDFA (1.5.6)
+  - AMapLocation-NO-IDFA (2.6.2):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapNavi-NO-IDFA (6.8.0):
+    - AMap3DMap-NO-IDFA (~> 6.7)
+    - AMapFoundation-NO-IDFA (~> 1.5)
+  - AMapSearch-NO-IDFA (6.9.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AVOSCloud (11.6.3)
+  - AVOSCloudIM (11.6.3):
+    - AVOSCloud (= 11.6.3)
+    - AVOSCloudIM/_ARC (= 11.6.3)
+    - AVOSCloudIM/_NOARC (= 11.6.3)
+  - AVOSCloudIM/_ARC (11.6.3):
+    - AVOSCloud (= 11.6.3)
+    - AVOSCloudIM/_NOARC (= 11.6.3)
+  - AVOSCloudIM/_NOARC (11.6.3):
+    - AVOSCloud (= 11.6.3)
+  - AVOSCloudLiveQuery (11.6.3):
+    - AVOSCloud (= 11.6.3)
+    - AVOSCloudIM (= 11.6.3)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - Differentiator (4.0.1)
+  - EasyAnimation (2.2.1)
+  - GlitchLabel (2.1.0)
+  - IQKeyboardManagerSwift (6.3.0)
+  - Kingfisher (5.5.0)
+  - MJRefresh (3.2.0)
+  - PKHUD (5.2.1)
+  - Presentr (1.9)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - Action (~> 4.0.0)
+  - AMap3DMap-NO-IDFA
+  - AMapLocation-NO-IDFA
+  - AMapNavi-NO-IDFA
+  - AMapSearch-NO-IDFA
+  - AVOSCloud
+  - AVOSCloudLiveQuery
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - EasyAnimation
+  - GlitchLabel
+  - IQKeyboardManagerSwift (= 6.3.0)
+  - Kingfisher
+  - MJRefresh
+  - PKHUD (~> 5.2.1)
+  - Presentr
+  - RxCocoa (~> 5.0.0)
+  - RxDataSources
+  - RxSwift (~> 5.0.0)
+  - SnapKit (~> 5.0.0)
+  - Then
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - AMap3DMap-NO-IDFA
+    - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
+    - AMapNavi-NO-IDFA
+    - AMapSearch-NO-IDFA
+    - AVOSCloud
+    - AVOSCloudIM
+    - AVOSCloudLiveQuery
+    - Differentiator
+    - EasyAnimation
+    - GlitchLabel
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MJRefresh
+    - PKHUD
+    - Presentr
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Then
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+SPEC CHECKSUMS:
+  Action: 0d14986aad0f1330aa27ce65d0cdeaacbb63d91c
+  AMap3DMap-NO-IDFA: ffb000a25913efcdc5d979faa54a78655965bc23
+  AMapFoundation-NO-IDFA: 40d723b352992d0f95abe2976f0c0ecda3c3ffc3
+  AMapLocation-NO-IDFA: d7792c8c516f415e186f1bc25946f1a58ca6a583
+  AMapNavi-NO-IDFA: 93c9e767a120472ace590f53a7917595822bde2c
+  AMapSearch-NO-IDFA: 264999e6c149383a8f164c2fe49b51513e93d674
+  AVOSCloud: 3148cbb1d05be4e479cffa206f147ef09a470fdf
+  AVOSCloudIM: 415ec613caa269f71aecc1439f0b27aec9174ec2
+  AVOSCloudLiveQuery: 43da88e8f30a38401e625a83cb4f7cf35fa97186
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  EasyAnimation: 226d133d23ef0ef99ddfb8928ff2a9a4a77d1cfd
+  GlitchLabel: b7970749cfdc780ef5489709726a60dd93c71e77
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: 0805c7101828e1ee1523010ed833d1cbf0757782
+
+COCOAPODS: 1.5.3

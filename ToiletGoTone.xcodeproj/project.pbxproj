@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C7B64D222B21D94007832D0 /* AutoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */; };
+		9C7B64D422B228BF007832D0 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D322B228BF007832D0 /* HistoryViewController.swift */; };
+		9C7B64D722B22F73007832D0 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D622B22F73007832D0 /* HistoryModel.swift */; };
+		9C7B64D922B23339007832D0 /* PKHud+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D822B23339007832D0 /* PKHud+Rx.swift */; };
+		9C7B64DB22B2334D007832D0 /* ActionError+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */; };
+		9CA869C822B14CCB005A6764 /* HalfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA869C722B14CCB005A6764 /* HalfViewController.swift */; };
+		9CB7606A22B0AEB6004EE816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7606922B0AEB6004EE816 /* AppDelegate.swift */; };
+		9CB7606C22B0AEB6004EE816 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7606B22B0AEB6004EE816 /* RootViewController.swift */; };
+		9CB7606F22B0AEB6004EE816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7606D22B0AEB6004EE816 /* Main.storyboard */; };
+		9CB7607122B0AEB7004EE816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7607022B0AEB7004EE816 /* Assets.xcassets */; };
+		9CB7607422B0AEB7004EE816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7607222B0AEB7004EE816 /* LaunchScreen.storyboard */; };
+		9CB7607D22B0D6D2004EE816 /* StaticConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7607C22B0D6D2004EE816 /* StaticConst.swift */; };
+		9CB7608422B0D9C4004EE816 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608322B0D9C4004EE816 /* BaseNavigationController.swift */; };
+		9CB7608622B0D9D0004EE816 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608522B0D9D0004EE816 /* UIViewController+Navigation.swift */; };
+		9CB7608822B0D9DB004EE816 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608722B0D9DB004EE816 /* ObjectAssociation.swift */; };
+		9CB7608A22B0DC94004EE816 /* ViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608922B0DC94004EE816 /* ViewLoader.swift */; };
+		9CB7608D22B0DDE7004EE816 /* APPDelegate+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608C22B0DDE7004EE816 /* APPDelegate+Ex.swift */; };
+		9CB7609022B0DE5D004EE816 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608E22B0DE5D004EE816 /* NSObject+Rx.swift */; };
+		9CB7609122B0DE5D004EE816 /* HasDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7608F22B0DE5D004EE816 /* HasDisposeBag.swift */; };
+		9CB7609522B0E004004EE816 /* style_extra.data in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7609322B0E004004EE816 /* style_extra.data */; };
+		9CB7609622B0E004004EE816 /* style.data in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7609422B0E004004EE816 /* style.data */; };
+		9CB7609822B0E04F004EE816 /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7609722B0E04F004EE816 /* MapHelper.swift */; };
+		9CB7609A22B0EC9B004EE816 /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7609922B0EC9B004EE816 /* HomeMapViewController.swift */; };
+		9CB7609D22B10EFE004EE816 /* ToiletBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7609C22B10EFE004EE816 /* ToiletBubbleView.swift */; };
+		DBAD6D0889C1FA270E229BF1 /* Pods_ToiletGoTone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1359D818D28FABC409DD8F4F /* Pods_ToiletGoTone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1359D818D28FABC409DD8F4F /* Pods_ToiletGoTone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToiletGoTone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoNavigationController.swift; sourceTree = "<group>"; };
+		9C7B64D322B228BF007832D0 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9C7B64D622B22F73007832D0 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		9C7B64D822B23339007832D0 /* PKHud+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PKHud+Rx.swift"; sourceTree = "<group>"; };
+		9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionError+Ex.swift"; sourceTree = "<group>"; };
+		9CA869C722B14CCB005A6764 /* HalfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfViewController.swift; sourceTree = "<group>"; };
+		9CB7606622B0AEB6004EE816 /* ToiletGoTone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToiletGoTone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB7606922B0AEB6004EE816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CB7606B22B0AEB6004EE816 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9CB7606E22B0AEB6004EE816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CB7607022B0AEB7004EE816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CB7607322B0AEB7004EE816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CB7607522B0AEB7004EE816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB7607C22B0D6D2004EE816 /* StaticConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticConst.swift; sourceTree = "<group>"; };
+		9CB7607E22B0D759004EE816 /* ToiletGoTone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToiletGoTone-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CB7608322B0D9C4004EE816 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		9CB7608522B0D9D0004EE816 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		9CB7608722B0D9DB004EE816 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
+		9CB7608922B0DC94004EE816 /* ViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoader.swift; sourceTree = "<group>"; };
+		9CB7608C22B0DDE7004EE816 /* APPDelegate+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APPDelegate+Ex.swift"; sourceTree = "<group>"; };
+		9CB7608E22B0DE5D004EE816 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
+		9CB7608F22B0DE5D004EE816 /* HasDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDisposeBag.swift; sourceTree = "<group>"; };
+		9CB7609322B0E004004EE816 /* style_extra.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = style_extra.data; sourceTree = "<group>"; };
+		9CB7609422B0E004004EE816 /* style.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = style.data; sourceTree = "<group>"; };
+		9CB7609722B0E04F004EE816 /* MapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelper.swift; sourceTree = "<group>"; };
+		9CB7609922B0EC9B004EE816 /* HomeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
+		9CB7609C22B10EFE004EE816 /* ToiletBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletBubbleView.swift; sourceTree = "<group>"; };
+		C36AC39F98ABDF749946E99A /* Pods-ToiletGoTone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToiletGoTone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToiletGoTone/Pods-ToiletGoTone.debug.xcconfig"; sourceTree = "<group>"; };
+		F826AB0EE4AD826B8E77B6D3 /* Pods-ToiletGoTone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToiletGoTone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToiletGoTone/Pods-ToiletGoTone.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CB7606322B0AEB6004EE816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAD6D0889C1FA270E229BF1 /* Pods_ToiletGoTone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C9DF5C7BCD9D57488834FF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C36AC39F98ABDF749946E99A /* Pods-ToiletGoTone.debug.xcconfig */,
+				F826AB0EE4AD826B8E77B6D3 /* Pods-ToiletGoTone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B65F808B05F4CBA46728805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1359D818D28FABC409DD8F4F /* Pods_ToiletGoTone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C7B64D522B22F5A007832D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C7B64D622B22F73007832D0 /* HistoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CB7605D22B0AEB6004EE816 = {
+			isa = PBXGroup;
+			children = (
+				9CB7606822B0AEB6004EE816 /* ToiletGoTone */,
+				9CB7606722B0AEB6004EE816 /* Products */,
+				1C9DF5C7BCD9D57488834FF9 /* Pods */,
+				6B65F808B05F4CBA46728805 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9CB7606722B0AEB6004EE816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7606622B0AEB6004EE816 /* ToiletGoTone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB7606822B0AEB6004EE816 /* ToiletGoTone */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7607522B0AEB7004EE816 /* Info.plist */,
+				9CB7606922B0AEB6004EE816 /* AppDelegate.swift */,
+				9CB7606B22B0AEB6004EE816 /* RootViewController.swift */,
+				9CB7609922B0EC9B004EE816 /* HomeMapViewController.swift */,
+				9CA869C722B14CCB005A6764 /* HalfViewController.swift */,
+				9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */,
+				9C7B64D322B228BF007832D0 /* HistoryViewController.swift */,
+				9CB7606D22B0AEB6004EE816 /* Main.storyboard */,
+				9CB7607222B0AEB7004EE816 /* LaunchScreen.storyboard */,
+				9CB7609722B0E04F004EE816 /* MapHelper.swift */,
+				9C7B64D522B22F5A007832D0 /* Models */,
+				9CB7609B22B10EBA004EE816 /* Views */,
+				9CB7609222B0DFE7004EE816 /* MapResource */,
+				9CB7608B22B0DD62004EE816 /* Extensions */,
+				9CB7608222B0D993004EE816 /* BaseCommon */,
+				9CB7607B22B0D6C0004EE816 /* AppSupport */,
+			);
+			path = ToiletGoTone;
+			sourceTree = "<group>";
+		};
+		9CB7607B22B0D6C0004EE816 /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7607022B0AEB7004EE816 /* Assets.xcassets */,
+				9CB7607C22B0D6D2004EE816 /* StaticConst.swift */,
+				9CB7607E22B0D759004EE816 /* ToiletGoTone-Bridging-Header.h */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		9CB7608222B0D993004EE816 /* BaseCommon */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7608922B0DC94004EE816 /* ViewLoader.swift */,
+				9CB7608722B0D9DB004EE816 /* ObjectAssociation.swift */,
+				9CB7608522B0D9D0004EE816 /* UIViewController+Navigation.swift */,
+				9CB7608322B0D9C4004EE816 /* BaseNavigationController.swift */,
+			);
+			path = BaseCommon;
+			sourceTree = "<group>";
+		};
+		9CB7608B22B0DD62004EE816 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */,
+				9C7B64D822B23339007832D0 /* PKHud+Rx.swift */,
+				9CB7608F22B0DE5D004EE816 /* HasDisposeBag.swift */,
+				9CB7608E22B0DE5D004EE816 /* NSObject+Rx.swift */,
+				9CB7608C22B0DDE7004EE816 /* APPDelegate+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CB7609222B0DFE7004EE816 /* MapResource */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7609322B0E004004EE816 /* style_extra.data */,
+				9CB7609422B0E004004EE816 /* style.data */,
+			);
+			path = MapResource;
+			sourceTree = "<group>";
+		};
+		9CB7609B22B10EBA004EE816 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7609C22B10EFE004EE816 /* ToiletBubbleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CB7606522B0AEB6004EE816 /* ToiletGoTone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB7607822B0AEB7004EE816 /* Build configuration list for PBXNativeTarget "ToiletGoTone" */;
+			buildPhases = (
+				A6755CA3652A24D77A36E59D /* [CP] Check Pods Manifest.lock */,
+				9CB7606222B0AEB6004EE816 /* Sources */,
+				9CB7606322B0AEB6004EE816 /* Frameworks */,
+				9CB7606422B0AEB6004EE816 /* Resources */,
+				B49D405F4EFC52F5DE2D077A /* [CP] Embed Pods Frameworks */,
+				98F8420519B8488C4911634C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToiletGoTone;
+			productName = ToiletGoTone;
+			productReference = 9CB7606622B0AEB6004EE816 /* ToiletGoTone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CB7605E22B0AEB6004EE816 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = mugua;
+				TargetAttributes = {
+					9CB7606522B0AEB6004EE816 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 9CB7606122B0AEB6004EE816 /* Build configuration list for PBXProject "ToiletGoTone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CB7605D22B0AEB6004EE816;
+			productRefGroup = 9CB7606722B0AEB6004EE816 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CB7606522B0AEB6004EE816 /* ToiletGoTone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CB7606422B0AEB6004EE816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB7609522B0E004004EE816 /* style_extra.data in Resources */,
+				9CB7607422B0AEB7004EE816 /* LaunchScreen.storyboard in Resources */,
+				9CB7607122B0AEB7004EE816 /* Assets.xcassets in Resources */,
+				9CB7609622B0E004004EE816 /* style.data in Resources */,
+				9CB7606F22B0AEB6004EE816 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98F8420519B8488C4911634C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToiletGoTone/Pods-ToiletGoTone-resources.sh",
+				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi-NO-IDFA/AMapNaviKit.framework/AMapNavi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToiletGoTone/Pods-ToiletGoTone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6755CA3652A24D77A36E59D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToiletGoTone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49D405F4EFC52F5DE2D077A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToiletGoTone/Pods-ToiletGoTone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloud/AVOSCloud.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloudIM/AVOSCloudIM.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloudLiveQuery/AVOSCloudLiveQuery.framework",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyAnimation/EasyAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/GlitchLabel/GlitchLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloud.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloudIM.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloudLiveQuery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlitchLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToiletGoTone/Pods-ToiletGoTone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CB7606222B0AEB6004EE816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB7609A22B0EC9B004EE816 /* HomeMapViewController.swift in Sources */,
+				9CB7609D22B10EFE004EE816 /* ToiletBubbleView.swift in Sources */,
+				9CB7608822B0D9DB004EE816 /* ObjectAssociation.swift in Sources */,
+				9CB7608422B0D9C4004EE816 /* BaseNavigationController.swift in Sources */,
+				9CB7608622B0D9D0004EE816 /* UIViewController+Navigation.swift in Sources */,
+				9CA869C822B14CCB005A6764 /* HalfViewController.swift in Sources */,
+				9CB7608D22B0DDE7004EE816 /* APPDelegate+Ex.swift in Sources */,
+				9C7B64D422B228BF007832D0 /* HistoryViewController.swift in Sources */,
+				9CB7609822B0E04F004EE816 /* MapHelper.swift in Sources */,
+				9C7B64D222B21D94007832D0 /* AutoNavigationController.swift in Sources */,
+				9C7B64D922B23339007832D0 /* PKHud+Rx.swift in Sources */,
+				9CB7608A22B0DC94004EE816 /* ViewLoader.swift in Sources */,
+				9CB7606C22B0AEB6004EE816 /* RootViewController.swift in Sources */,
+				9C7B64D722B22F73007832D0 /* HistoryModel.swift in Sources */,
+				9CB7607D22B0D6D2004EE816 /* StaticConst.swift in Sources */,
+				9CB7609122B0DE5D004EE816 /* HasDisposeBag.swift in Sources */,
+				9C7B64DB22B2334D007832D0 /* ActionError+Ex.swift in Sources */,
+				9CB7606A22B0AEB6004EE816 /* AppDelegate.swift in Sources */,
+				9CB7609022B0DE5D004EE816 /* NSObject+Rx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CB7606D22B0AEB6004EE816 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB7606E22B0AEB6004EE816 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CB7607222B0AEB7004EE816 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB7607322B0AEB7004EE816 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CB7607622B0AEB7004EE816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CB7607722B0AEB7004EE816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CB7607922B0AEB7004EE816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36AC39F98ABDF749946E99A /* Pods-ToiletGoTone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX5743TCEJ;
+				INFOPLIST_FILE = ToiletGoTone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oldwhy.ToiletGoTone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToiletGoTone/AppSupport/ToiletGoTone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9CB7607A22B0AEB7004EE816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F826AB0EE4AD826B8E77B6D3 /* Pods-ToiletGoTone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YX5743TCEJ;
+				INFOPLIST_FILE = ToiletGoTone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oldwhy.ToiletGoTone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToiletGoTone/AppSupport/ToiletGoTone-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CB7606122B0AEB6004EE816 /* Build configuration list for PBXProject "ToiletGoTone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB7607622B0AEB7004EE816 /* Debug */,
+				9CB7607722B0AEB7004EE816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB7607822B0AEB7004EE816 /* Build configuration list for PBXNativeTarget "ToiletGoTone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB7607922B0AEB7004EE816 /* Debug */,
+				9CB7607A22B0AEB7004EE816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CB7605E22B0AEB6004EE816 /* Project object */;
+}
