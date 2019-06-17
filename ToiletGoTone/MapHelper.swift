@@ -111,8 +111,11 @@ extension MapHelper: MAMapViewDelegate {
     func mapView(_ mapView: MAMapView!, didUpdate userLocation: MAUserLocation!, updatingLocation: Bool) {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {[weak self] in
-            self?.userLocationObserver.accept(userLocation.location.coordinate)
-            mapView.userTrackingMode = .none
+            
+            if userLocation.location != nil {
+                self?.userLocationObserver.accept(userLocation.location.coordinate)
+                mapView.userTrackingMode = .none
+            }
         }
     }
     

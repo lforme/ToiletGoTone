@@ -17,8 +17,9 @@ extension NSNotification.Name {
 
 
 struct DatabaseKey {
-    static let privacyTable = "PrivacyModel"
+    static let privacy = "PrivacyModel"
     static let favoriteToilet = "FavoriteToilet"
+    static let admin = "Admin"
 }
 
 

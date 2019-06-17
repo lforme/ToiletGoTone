@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C75502822B7284900DBFC58 /* Still-D-R-E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C75502722B7284900DBFC58 /* Still-D-R-E.mp3 */; };
+		9C75502A22B72EFB00DBFC58 /* LiveDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75502922B72EFB00DBFC58 /* LiveDataProtocol.swift */; };
+		9C75502C22B73AE800DBFC58 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75502B22B73AE800DBFC58 /* PrivacyPolicyViewController.swift */; };
 		9C7B64D222B21D94007832D0 /* AutoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */; };
 		9C7B64D422B228BF007832D0 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D322B228BF007832D0 /* HistoryViewController.swift */; };
 		9C7B64D722B22F73007832D0 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64D622B22F73007832D0 /* HistoryModel.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		1359D818D28FABC409DD8F4F /* Pods_ToiletGoTone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToiletGoTone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C75502722B7284900DBFC58 /* Still-D-R-E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Still-D-R-E.mp3"; sourceTree = "<group>"; };
+		9C75502922B72EFB00DBFC58 /* LiveDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataProtocol.swift; sourceTree = "<group>"; };
+		9C75502B22B73AE800DBFC58 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoNavigationController.swift; sourceTree = "<group>"; };
 		9C7B64D322B228BF007832D0 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		9C7B64D622B22F73007832D0 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				9C7B64D622B22F73007832D0 /* HistoryModel.swift */,
+				9C75502922B72EFB00DBFC58 /* LiveDataProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 				9CA869C722B14CCB005A6764 /* HalfViewController.swift */,
 				9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */,
 				9C7B64D322B228BF007832D0 /* HistoryViewController.swift */,
+				9C75502B22B73AE800DBFC58 /* PrivacyPolicyViewController.swift */,
 				9CB7606D22B0AEB6004EE816 /* Main.storyboard */,
 				9CB7607222B0AEB7004EE816 /* LaunchScreen.storyboard */,
 				9CB7609722B0E04F004EE816 /* MapHelper.swift */,
@@ -153,6 +161,7 @@
 				9CB7607022B0AEB7004EE816 /* Assets.xcassets */,
 				9CB7607C22B0D6D2004EE816 /* StaticConst.swift */,
 				9CB7607E22B0D759004EE816 /* ToiletGoTone-Bridging-Header.h */,
+				9C75502722B7284900DBFC58 /* Still-D-R-E.mp3 */,
 			);
 			path = AppSupport;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB7609522B0E004004EE816 /* style_extra.data in Resources */,
+				9C75502822B7284900DBFC58 /* Still-D-R-E.mp3 in Resources */,
 				9CB7607422B0AEB7004EE816 /* LaunchScreen.storyboard in Resources */,
 				9CB7607122B0AEB7004EE816 /* Assets.xcassets in Resources */,
 				9CB7609622B0E004004EE816 /* style.data in Resources */,
@@ -371,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB7609A22B0EC9B004EE816 /* HomeMapViewController.swift in Sources */,
+				9C75502C22B73AE800DBFC58 /* PrivacyPolicyViewController.swift in Sources */,
 				9CB7609D22B10EFE004EE816 /* ToiletBubbleView.swift in Sources */,
 				9CB7608822B0D9DB004EE816 /* ObjectAssociation.swift in Sources */,
 				9CB7608422B0D9C4004EE816 /* BaseNavigationController.swift in Sources */,
@@ -388,6 +399,7 @@
 				9CB7607D22B0D6D2004EE816 /* StaticConst.swift in Sources */,
 				9CB7609122B0DE5D004EE816 /* HasDisposeBag.swift in Sources */,
 				9C7B64DB22B2334D007832D0 /* ActionError+Ex.swift in Sources */,
+				9C75502A22B72EFB00DBFC58 /* LiveDataProtocol.swift in Sources */,
 				9CB7606A22B0AEB6004EE816 /* AppDelegate.swift in Sources */,
 				9CB7609022B0DE5D004EE816 /* NSObject+Rx.swift in Sources */,
 			);

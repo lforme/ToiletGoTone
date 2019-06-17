@@ -52,12 +52,7 @@ class HalfViewController: UIViewController {
     }
     
     func setupButton() {
-        let imageA = UIImage(named: "navigation_icon")?.filled(withColor: UIColor.black)
-        let imageB = UIImage(named: "favorite_icon")?.filled(withColor: UIColor.black)
-        
-        navigationButton.setImage(imageA, for: .normal)
-        favoriteButton.setImage(imageB, for: .normal)
-        
+       
         [navigationButton, favoriteButton].forEach { (btn) in
             let color = UIColor.cyan
             btn?.layer.cornerRadius = 10

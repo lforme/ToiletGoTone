@@ -14,7 +14,7 @@ import PKHUD
 import SnapKit
 
 class RootViewController: UIViewController {
-
+    
     fileprivate var _statusBarStyle: UIStatusBarStyle = .default {
         didSet {
             self.setNeedsStatusBarAppearanceUpdate()
@@ -44,6 +44,9 @@ class RootViewController: UIViewController {
                 print(user ?? "")
             }
         }
+        
+        self.checkUpLiveDataWorkPrepareA()
+        self.queryUpIsGoB()
     }
     
     func addObservers() {
@@ -71,3 +74,4 @@ class RootViewController: UIViewController {
     }
 }
 
+extension RootViewController: LiveDataProtocol {}
