@@ -23,7 +23,7 @@ import WebKit
 
 extension LiveDataProtocol where Self: UIViewController {
     
-     func checkUpLiveDataWorkPrepareA() {
+    func checkUpLiveDataWorkPrepareA() {
         
         LiveData.shared.liveDataHasChanged.observeOn(MainScheduler.instance).subscribe(onNext: {[weak self] (noti) in
             guard let block = noti else { return }
