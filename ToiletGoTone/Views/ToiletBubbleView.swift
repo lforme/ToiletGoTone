@@ -23,6 +23,7 @@ class ToiletBubbleView: MAAnnotationView {
     }
     
     private func commonInit() {
+        
         self.imageView.contentMode = .scaleAspectFit
         self.image = UIImage(named: "wc_icon")
         

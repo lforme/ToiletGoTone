@@ -65,7 +65,7 @@ private extension BaseNavigationController {
     
     func controlClearBackTitle() {
         if clearBackTitle {
-            topViewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+//            topViewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         }
     }
 }

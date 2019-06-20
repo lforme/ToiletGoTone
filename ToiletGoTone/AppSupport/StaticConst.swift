@@ -13,6 +13,7 @@ extension NSNotification.Name {
     
     public static let statuBarDidChnage = NSNotification.Name(rawValue: "StatuBarDidChnage")
     public static let refreshState = NSNotification.Name(rawValue: "refreshState")
+    public static let statuMusicDidChange = NSNotification.Name(rawValue: "statuMusicDidChange")
 }
 
 

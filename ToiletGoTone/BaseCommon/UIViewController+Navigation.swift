@@ -83,7 +83,14 @@ extension UIViewController {
         }
         
         if self.navigationController?.viewControllers.count ?? 0 > 1 {
-
+            let button = UIButton(type: .custom)
+            button.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+            button.contentEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
+            let iamge = UIImage.init(named: "back_icon")
+            button.setImage(iamge, for: .normal)
+            button.contentMode = .left
+            button.addTarget(self, action: #selector(leftNavigationItemAction), for: .touchUpInside)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
         }
     }
 }

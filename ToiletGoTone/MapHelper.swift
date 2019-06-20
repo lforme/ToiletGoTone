@@ -44,6 +44,12 @@ final class MapHelper: UIView {
         setupSearch()
         setupWalkMan()
     }
+    
+    public func locateCurrentPosition() {
+        if let l = userLocationObserver.value {
+            self.mapView.setCenter(l, animated: true)
+        }
+    }
 }
 
 

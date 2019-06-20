@@ -9,16 +9,17 @@
 import UIKit
 import EasyAnimation
 import AVFoundation
+import RxSwift
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
     var player: AVAudioPlayer?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-     
+        
         
         AMapServices.shared()?.apiKey = ThirdVenderKey.amapApiKey
         AMapServices.shared().enableHTTPS = true
@@ -28,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         EasyAnimation.enable()
         
         playSound()
-            
+        observeMusicPlayStatus()
+        
         return true
     }
     
@@ -39,19 +41,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
             
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
-            /* iOS 10 and earlier require the following line:
-             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-            
             guard let player = player else { return }
-            player.numberOfLoops = -1
             player.play()
+            player.numberOfLoops = -1
+            if let played = Storage.load(key: "music") as? Bool {
+                if played {
+                    player.play()
+                } else {
+                    player.stop()
+                }
+            }
             
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+    
+    private func observeMusicPlayStatus() {
+        NotificationCenter.default.rx.notification(.statuMusicDidChange)
+            .takeUntil(rx.deallocated)
+            .observeOn(MainScheduler.instance)
+            .subscribeOn(MainScheduler.instance).subscribe(onNext: {[weak self] (noti) in
+                guard let isOn = noti.object as? Bool else {
+                    return
+                }
+                if isOn {
+                    self?.player?.play()
+                } else {
+                    self?.player?.stop()
+                }
+                
+            }).disposed(by: rx.disposeBag)
     }
 }
 

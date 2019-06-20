@@ -16,6 +16,9 @@ class HomeMapViewController: UIViewController {
 
     let presenter = Presentr(presentationType: .bottomHalf)
     @IBOutlet weak var historyButton: UIButton!
+    @IBOutlet weak var settingButton: UIButton!
+    @IBOutlet weak var userLocationButton: UIButton!
+    
     var tiggerCounter = BehaviorRelay<Int>(value: 0)
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,8 +48,12 @@ class HomeMapViewController: UIViewController {
         AppDelegate.changeStatusBarStyle(.lightContent)
         view.addSubview(MapHelper.shareInstance)
         view.bringSubviewToFront(historyButton)
-        historyButton.clipsToBounds = true
-        historyButton.layer.cornerRadius = 3
+        view.bringSubviewToFront(settingButton)
+        view.bringSubviewToFront(userLocationButton)
+        [userLocationButton, historyButton, settingButton].forEach { (btn) in
+            btn?.clipsToBounds = true
+            btn?.layer.cornerRadius = 3
+        }
         
         MapHelper.shareInstance.selectBlock = {[weak self] (user, poi) in
             guard let this = self else {
@@ -102,4 +109,9 @@ class HomeMapViewController: UIViewController {
         let historyVC: HistoryViewController = ViewLoader.Storyboard.controller(from: "Main")
         navigationController?.pushViewController(historyVC, animated: true)
     }
+    
+    @IBAction func loctionUserTap(_ sender: UIButton) {
+        MapHelper.shareInstance.locateCurrentPosition()
+    }
+    
 }

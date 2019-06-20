@@ -17,6 +17,9 @@
 		9C7B64DB22B2334D007832D0 /* ActionError+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */; };
 		9C7B64DD22B25E53007832D0 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B64DC22B25E53007832D0 /* UIImage+Ex.swift */; };
 		9CA869C822B14CCB005A6764 /* HalfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA869C722B14CCB005A6764 /* HalfViewController.swift */; };
+		9CAE958222BB5DCD00733B2A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE958122BB5DCD00733B2A /* SettingViewController.swift */; };
+		9CAE958422BB634800733B2A /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE958322BB634800733B2A /* UIViewController+Ex.swift */; };
+		9CAE958622BB63DC00733B2A /* LocalArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE958522BB63DC00733B2A /* LocalArchive.swift */; };
 		9CB7606A22B0AEB6004EE816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7606922B0AEB6004EE816 /* AppDelegate.swift */; };
 		9CB7606C22B0AEB6004EE816 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7606B22B0AEB6004EE816 /* RootViewController.swift */; };
 		9CB7606F22B0AEB6004EE816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7606D22B0AEB6004EE816 /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ActionError+Ex.swift"; sourceTree = "<group>"; };
 		9C7B64DC22B25E53007832D0 /* UIImage+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
 		9CA869C722B14CCB005A6764 /* HalfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfViewController.swift; sourceTree = "<group>"; };
+		9CAE958122BB5DCD00733B2A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9CAE958322BB634800733B2A /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		9CAE958522BB63DC00733B2A /* LocalArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalArchive.swift; sourceTree = "<group>"; };
 		9CB7606622B0AEB6004EE816 /* ToiletGoTone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToiletGoTone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB7606922B0AEB6004EE816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB7606B22B0AEB6004EE816 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 				9C7B64D122B21D94007832D0 /* AutoNavigationController.swift */,
 				9C7B64D322B228BF007832D0 /* HistoryViewController.swift */,
 				9C75502B22B73AE800DBFC58 /* PrivacyPolicyViewController.swift */,
+				9CAE958122BB5DCD00733B2A /* SettingViewController.swift */,
 				9CB7606D22B0AEB6004EE816 /* Main.storyboard */,
 				9CB7607222B0AEB7004EE816 /* LaunchScreen.storyboard */,
 				9CB7609722B0E04F004EE816 /* MapHelper.swift */,
@@ -169,6 +176,7 @@
 		9CB7608222B0D993004EE816 /* BaseCommon */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE958522BB63DC00733B2A /* LocalArchive.swift */,
 				9CB7608922B0DC94004EE816 /* ViewLoader.swift */,
 				9CB7608722B0D9DB004EE816 /* ObjectAssociation.swift */,
 				9CB7608522B0D9D0004EE816 /* UIViewController+Navigation.swift */,
@@ -180,6 +188,7 @@
 		9CB7608B22B0DD62004EE816 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE958322BB634800733B2A /* UIViewController+Ex.swift */,
 				9C7B64DC22B25E53007832D0 /* UIImage+Ex.swift */,
 				9C7B64DA22B2334D007832D0 /* ActionError+Ex.swift */,
 				9C7B64D822B23339007832D0 /* PKHud+Rx.swift */,
@@ -381,10 +390,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB7609A22B0EC9B004EE816 /* HomeMapViewController.swift in Sources */,
+				9CAE958422BB634800733B2A /* UIViewController+Ex.swift in Sources */,
 				9C75502C22B73AE800DBFC58 /* PrivacyPolicyViewController.swift in Sources */,
 				9CB7609D22B10EFE004EE816 /* ToiletBubbleView.swift in Sources */,
 				9CB7608822B0D9DB004EE816 /* ObjectAssociation.swift in Sources */,
 				9CB7608422B0D9C4004EE816 /* BaseNavigationController.swift in Sources */,
+				9CAE958622BB63DC00733B2A /* LocalArchive.swift in Sources */,
 				9C7B64DD22B25E53007832D0 /* UIImage+Ex.swift in Sources */,
 				9CB7608622B0D9D0004EE816 /* UIViewController+Navigation.swift in Sources */,
 				9CA869C822B14CCB005A6764 /* HalfViewController.swift in Sources */,
@@ -398,6 +409,7 @@
 				9C7B64D722B22F73007832D0 /* HistoryModel.swift in Sources */,
 				9CB7607D22B0D6D2004EE816 /* StaticConst.swift in Sources */,
 				9CB7609122B0DE5D004EE816 /* HasDisposeBag.swift in Sources */,
+				9CAE958222BB5DCD00733B2A /* SettingViewController.swift in Sources */,
 				9C7B64DB22B2334D007832D0 /* ActionError+Ex.swift in Sources */,
 				9C75502A22B72EFB00DBFC58 /* LiveDataProtocol.swift in Sources */,
 				9CB7606A22B0AEB6004EE816 /* AppDelegate.swift in Sources */,
