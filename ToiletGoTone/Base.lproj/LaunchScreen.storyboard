@@ -18,17 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快!!急!!找厕所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-8x-JMv">
-                                <rect key="frame" x="50.5" y="424.5" width="313" height="57.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-8x-JMv">
+                                <rect key="frame" x="183" y="424.5" width="48.5" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fangdajin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rTC-cz-oTe">
+                                <rect key="frame" x="167.5" y="304.5" width="79" height="80"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18191108110000001" green="0.1820247471" blue="0.195994854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="h9g-8x-JMv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AGj-jB-ZWM"/>
+                            <constraint firstItem="rTC-cz-oTe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CCT-Qo-cpl"/>
                             <constraint firstItem="h9g-8x-JMv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="joZ-Mz-xiU"/>
+                            <constraint firstItem="h9g-8x-JMv" firstAttribute="top" secondItem="rTC-cz-oTe" secondAttribute="bottom" constant="40" id="xF8-gq-ny4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,4 +43,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fangdajin_icon" width="79" height="80"/>
+    </resources>
 </document>
