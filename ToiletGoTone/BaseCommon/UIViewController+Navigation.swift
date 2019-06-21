@@ -86,7 +86,10 @@ extension UIViewController {
             let button = UIButton(type: .custom)
             button.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
             button.contentEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
-            let iamge = UIImage.init(named: "back_icon")
+            var iamge = UIImage(named: "back_icon")
+            if self is AutoNavigationController {
+                iamge = iamge?.filled(withColor: UIColor.white)
+            }
             button.setImage(iamge, for: .normal)
             button.contentMode = .left
             button.addTarget(self, action: #selector(leftNavigationItemAction), for: .touchUpInside)
