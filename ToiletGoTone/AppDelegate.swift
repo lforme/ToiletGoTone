@@ -11,6 +11,7 @@ import EasyAnimation
 import AVFoundation
 import RxSwift
 import RxCocoa
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,12 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AMapServices.shared()?.apiKey = ThirdVenderKey.amapApiKey
         AMapServices.shared().enableHTTPS = true
         
+        AVOSCloud.setServerURLString("https://avoscloud.com", for: AVServiceModule.API)
+        AVOSCloud.setServerURLString("https://avoscloud.com", for: AVServiceModule.engine)
+        AVOSCloud.setServerURLString("https://avoscloud.com", for: AVServiceModule.push)
+        AVOSCloud.setServerURLString("https://avoscloud.com", for: AVServiceModule.RTM)
         AVOSCloud.setApplicationId(ThirdVenderKey.leanCloudId, clientKey: ThirdVenderKey.leanCloudClentKey)
         
         EasyAnimation.enable()
         
         playSound()
         observeMusicPlayStatus()
+        
+     
         
         return true
     }
@@ -74,6 +81,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
             }).disposed(by: rx.disposeBag)
+    }
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+     
     }
 }
 
