@@ -30,4 +30,5 @@ target 'ToiletGoTone' do
 
   pod 'AVOSCloud'
   pod 'AVOSCloudLiveQuery'
+  pod 'JPush'
 end

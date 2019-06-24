@@ -20,8 +20,8 @@ class HalfViewController: UIViewController {
     
     private let search = AMapSearchAPI()
     
-    var vm: HistoryModel!
-    
+    var vm: HistoryModel?
+
     @IBOutlet weak var streetInfoLabel: GlitchLabel!
     @IBOutlet weak var buildingLabel: GlitchLabel!
     @IBOutlet weak var distanceLabel: GlitchLabel!
@@ -38,17 +38,14 @@ class HalfViewController: UIViewController {
         super.viewDidLoad()
         
         setupSearch()
+        view.backgroundColor = UIColor.flatOrangeDark.withAlphaComponent(0.5)
+        setupButton()
         
         guard let id = AVUser.current()?.objectId else {
-            
             HUD.flash(.label("无法获取用户ID"), delay: 2)
             return
         }
         vm = HistoryModel(id: id)
-        
-        view.backgroundColor = UIColor.flatOrangeDark.withAlphaComponent(0.5)
-        
-        setupButton()
     }
     
     func setupButton() {
@@ -92,11 +89,11 @@ class HalfViewController: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
         
-        vm.buildingName = streetInfoLabel.text
-        vm.street = buildingLabel.text
-        vm.evaluate = "这个厕所真的很好用哦"
+        vm?.buildingName = streetInfoLabel.text
+        vm?.street = buildingLabel.text
+        vm?.evaluate = "这个厕所真的很好用哦"
         
-        vm.saveToServer().subscribe(onNext: { (s) in
+        vm?.saveToServer().subscribe(onNext: { (s) in
             if s {
                 HUD.flash(.label("收藏成功"), delay: 2)
             }
