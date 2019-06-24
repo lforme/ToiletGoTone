@@ -10,3 +10,5 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
+
+#import "JPUSHService.h"

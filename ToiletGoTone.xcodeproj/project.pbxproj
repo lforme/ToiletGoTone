@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1359D818D28FABC409DD8F4F /* Pods_ToiletGoTone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToiletGoTone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1DF85422C0A83C0049EE8C /* ToiletGoTone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToiletGoTone.entitlements; sourceTree = "<group>"; };
 		9C75502722B7284900DBFC58 /* Still-D-R-E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Still-D-R-E.mp3"; sourceTree = "<group>"; };
 		9C75502922B72EFB00DBFC58 /* LiveDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDataProtocol.swift; sourceTree = "<group>"; };
 		9C75502B22B73AE800DBFC58 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		9CB7606822B0AEB6004EE816 /* ToiletGoTone */ = {
 			isa = PBXGroup;
 			children = (
+				9C1DF85422C0A83C0049EE8C /* ToiletGoTone.entitlements */,
 				9CB7607522B0AEB7004EE816 /* Info.plist */,
 				9CB7606922B0AEB6004EE816 /* AppDelegate.swift */,
 				9CB7606B22B0AEB6004EE816 /* RootViewController.swift */,
@@ -252,6 +254,11 @@
 					9CB7606522B0AEB6004EE816 = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -561,8 +568,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ToiletGoTone/ToiletGoTone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YX5743TCEJ;
+				DEVELOPMENT_TEAM = JM5XGTM287;
 				INFOPLIST_FILE = ToiletGoTone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,8 +592,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ToiletGoTone/ToiletGoTone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YX5743TCEJ;
+				DEVELOPMENT_TEAM = JM5XGTM287;
 				INFOPLIST_FILE = ToiletGoTone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
