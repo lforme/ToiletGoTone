@@ -32,6 +32,9 @@ PODS:
   - EasyAnimation (2.2.1)
   - GlitchLabel (2.1.0)
   - IQKeyboardManagerSwift (6.3.0)
+  - JCore (2.0.2)
+  - JPush (3.2.1):
+    - JCore (< 3.0.0, >= 2.0.0)
   - Kingfisher (5.5.0)
   - MJRefresh (3.2.0)
   - PKHUD (5.2.1)
@@ -61,6 +64,7 @@ DEPENDENCIES:
   - EasyAnimation
   - GlitchLabel
   - IQKeyboardManagerSwift (= 6.3.0)
+  - JPush
   - Kingfisher
   - MJRefresh
   - PKHUD (~> 5.2.1)
@@ -86,6 +90,8 @@ SPEC REPOS:
     - EasyAnimation
     - GlitchLabel
     - IQKeyboardManagerSwift
+    - JCore
+    - JPush
     - Kingfisher
     - MJRefresh
     - PKHUD
@@ -121,6 +127,8 @@ SPEC CHECKSUMS:
   EasyAnimation: 226d133d23ef0ef99ddfb8928ff2a9a4a77d1cfd
   GlitchLabel: b7970749cfdc780ef5489709726a60dd93c71e77
   IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  JCore: d4cbe6d178eaeb0ed263e42a6ebcb617855ef7cb
+  JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
   Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
@@ -132,6 +140,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: 0805c7101828e1ee1523010ed833d1cbf0757782
+PODFILE CHECKSUM: 31c2798a6bc531eec9b9f2669f688e66234dcb30
 
 COCOAPODS: 1.5.3
