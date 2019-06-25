@@ -86,6 +86,7 @@ class LiveData: NSObject {
     
     func queryDataA(text: @escaping (URL)->Void) {
         let query = AVQuery(className: DatabaseKey.privacy)
+        query.cachePolicy = .networkElseCache
         
         query.findObjectsInBackground { (objs, _) in
             guard let objc = objs?.first as? AVObject, let urlString = objc.object(forKey: "privacyPolicy") as? String else { return }
@@ -102,6 +103,7 @@ class LiveData: NSObject {
     
     func queryDataB(go: @escaping (Bool)->Void) {
         let query = AVQuery(className: DatabaseKey.privacy)
+        query.cachePolicy = .networkElseCache
         
         query.findObjectsInBackground { (objs, _) in
             guard let objc = objs?.first as? AVObject, let f = objc.object(forKey: "isFrist") as? Bool else { return }
@@ -113,6 +115,8 @@ class LiveData: NSObject {
     
     func updatePrivacy(url: String, isFristShow: Bool = false) {
         let q = AVQuery(className: DatabaseKey.privacy)
+        q.cachePolicy = .networkElseCache
+        
         q.getFirstObjectInBackground { (obj, error) in
             if let e = error {
                 print(e.localizedDescription)
@@ -126,6 +130,8 @@ class LiveData: NSObject {
     
     private func getAdminPwd() {
         let obj = AVQuery(className: DatabaseKey.admin)
+        obj.cachePolicy = .networkElseCache
+        
         obj.whereKey("bundleIdentifier", equalTo: Bundle.main.bundleIdentifier ?? "com.oldwhy.ToiletGoTone")
         obj.getFirstObjectInBackground {[unowned self] (objc, error) in
             if let e = error {
