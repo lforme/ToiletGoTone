@@ -32,7 +32,7 @@ class SettingViewController: UITableViewController {
     
     func bindRx() {
         let musicIsOn = Storage.load(key: "music") as? Bool
-        musicSwitch.isOn = musicIsOn ?? true
+        musicSwitch.isOn = musicIsOn ?? false
         
         musicSwitch.rx.isOn.subscribe(onNext: { (isOn) in
             Storage.save(key: "music", value: isOn)
