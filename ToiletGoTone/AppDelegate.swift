@@ -58,7 +58,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             
             guard let player = player else { return }
-            player.play()
             player.numberOfLoops = -1
             if let played = Storage.load(key: "music") as? Bool {
                 if played {
